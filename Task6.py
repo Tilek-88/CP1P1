@@ -1,8 +1,8 @@
 def bigger_guy(one, two):
-    if one > two:
-        return False
+    if one < two:   
+        return two
     else:
-        return True    
+        return one    
 
 
 #write your code here ...

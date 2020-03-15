@@ -1,17 +1,16 @@
 def choice_to_number(choice):
-    for number in choice:
-        if number == 1:
-           return number
+   number_to_choice = {"Usain":1, "Me":2, "Aybek":3}
+   return number_to_choice.get(choice)
+#print(choice_to_number(2))
             
            
 """Convert choice to number."""
 # If choice is Usain you should get back 1.
 def number_to_choice(number):
-    for i in number:
-        if i == 0:
-            return False
-        else:
-            return True
+    choice_to_number = {1:"Usain", 2:"Me", 3:"Aybek"}
+    return choice_to_number.get(number)
+#print(number_to_choice("usain"))
+    
 """Convert number to choice."""
 # if number is 1 then return usain bolt.
 
@@ -29,7 +28,7 @@ def test_all():
         test_choice_to_number()
         test_number_to_choice()
     except AssertionError:
-        print('wroning')
+        print('wrong')
     else:
         print('success')
 #test your code by un-commenting the line(s) below
